@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center-box">
+    <div class="card" style="text-align:center; padding:50px;">
+        <h1 style="color:#333;">Smart Quiz App</h1>
+        <p style="color:#555;">Test your knowledge with random questions</p>
+
+        <a href="/quiz">
+            <button style="margin-top:20px;">Start Quiz</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>

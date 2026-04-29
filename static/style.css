@@ -1,0 +1,152 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2, #6dd5ed);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* ===== CENTER BOX ===== */
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== HOME CARD ===== */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* ===== HEADINGS FIX ===== */
+/* ❌ REMOVE global white */
+/* h1 { color: white; } */
+
+/* ✅ Only quiz title white */
+.game-container h1 {
+    color: white;
+    text-align: center;
+}
+
+/* Default headings */
+h2 {
+    color: #333;
+}
+
+/* ===== GAME CONTAINER ===== */
+.game-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+}
+
+/* ===== QUESTION BOX ===== */
+.question-box {
+    background: rgba(255,255,255,0.95);
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== QUESTION TEXT ===== */
+.question-box p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ===== OPTIONS ===== */
+.option {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #f1f1f1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #dbeafe;
+    transform: scale(1.02);
+}
+
+/* Hide radio */
+.option input {
+    display: none;
+}
+
+/* Selected option */
+.option input:checked + span {
+    background: #4CAF50;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    padding: 12px 22px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+/* Submit button */
+.submit-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* ===== RESULT CARD FIX ===== */
+.result-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Override heading inside result */
+.result-card h1 {
+    color: #333;
+}
+
+/* Score styling */
+.result-card h2 {
+    color: #4CAF50;
+    font-size: 32px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .game-container {
+        width: 90%;
+    }
+}
