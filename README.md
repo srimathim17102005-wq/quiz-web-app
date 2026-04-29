@@ -1,24 +1,24 @@
-Quiz Web Application
+#Quiz Web Application
 
-Description
+#Description
 
 A simple full-stack quiz web application developed using Flask. This app allows users to answer multiple-choice questions and view their final score.
 
-Tech Stack
+#Tech Stack
 
 - Python (Flask)
 - HTML
 - CSS
 - SQLite
 
-Features
+#Features
 
 - Multiple choice questions
 - Real-time score calculation
 - Clean and simple user interface
 - Data stored using SQLite database
 
-How to Run
+#How to Run
 
 1. Clone the repository
 2. Install Flask:
@@ -28,7 +28,7 @@ How to Run
 4. Open browser and go to:
    http://127.0.0.1:5000/
 
-Project Structure
+#Project Structure
 
 quiz-web-app/
 │── app.py
